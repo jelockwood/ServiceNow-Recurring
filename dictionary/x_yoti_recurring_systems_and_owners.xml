@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Systems and Owners" max_length="40" name="x_yoti_recurring_systems_and_owners" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="System Description" max_length="4000" name="system_description" type="string"/>
+        <element label="System Owner" max_length="32" name="system_owner" reference="sys_user" type="reference"/>
+        <element label="System Short Description" max_length="40" name="system_short_description" type="string"/>
+        <index name="index">
+            <element name="system_owner"/>
+        </index>
+    </element>
+</database>

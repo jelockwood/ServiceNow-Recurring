@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_yoti_recurring_systems_and_owners">x_yoti_recurring_systems_and_owners</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>SYS</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>john.lockwood</sys_created_by>
+        <sys_created_on>2018-05-10 15:58:01</sys_created_on>
+        <sys_id>8e99ffa8db46170024fdfba6689619cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SYS</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_yoti_recurring">fa857728db46170024fdfba668961954</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">fa857728db46170024fdfba668961954</sys_scope>
+        <sys_update_name>sys_number_8e99ffa8db46170024fdfba6689619cc</sys_update_name>
+        <sys_updated_by>john.lockwood</sys_updated_by>
+        <sys_updated_on>2018-05-10 15:58:01</sys_updated_on>
+    </sys_number>
+</record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Pick 5 random laptops and audit</name>
+        <run_as display_value="John Lockwood">7cec93c2db25130024fdfba6689619ef</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2018-05-10 16:39:51</run_start>
+        <run_time>1970-01-01 00:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[var target = new GlideRecord('x_yoti_recurring_recurring_task');
+//Create new record in incident
+target.initialize();
+//set values in new incident
+target.short_description = 'Time to pick 5 random laptops and audit them.';
+// target.category = 'Quarterly Review';
+// target.active = 'true';
+// target.caller_id = source.system_owner;
+target.assignment_group = 'Service Desk';
+target.description = 'You must now pick 5 random laptops and manually check they are both encrypted and have working up-to-date anti-virus software on them. If you find problems you should note them in this ticket and complete any steps needed to resolve those issues and again note this in this ticket. Once all are correct you can close this ticket and note that all are correct.';
+// write new incident
+target.insert();
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>john.lockwood</sys_created_by>
+        <sys_created_on>2018-05-10 16:45:19</sys_created_on>
+        <sys_id>be2304bcdb46170024fdfba6689619f9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Pick 5 random laptops and audit</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_yoti_recurring">fa857728db46170024fdfba668961954</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">fa857728db46170024fdfba668961954</sys_scope>
+        <sys_update_name>sysauto_script_be2304bcdb46170024fdfba6689619f9</sys_update_name>
+        <sys_updated_by>john.lockwood</sys_updated_by>
+        <sys_updated_on>2018-05-10 16:57:35</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
